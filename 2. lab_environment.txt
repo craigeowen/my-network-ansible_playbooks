@@ -8,9 +8,14 @@ Hot machine:
 	Storage: 450GB Sata
 VMWare: ESXi 6.5.0
 
-I am using Ubuntu for the virtual server infrastructure. This approach has actually caused some issues as I do not find Ubuntu to be the most stable Linux distro within my esxi host; as I was suffering a lot of freezing. So I have deployed a Red Hat Enterprise machine as the ansible host...makes sense as ansible is now part of Red Hat. I may opt to use other Linux distros as the lab grows, such as Kali, but that is for the future.
+I am using Ubuntu for the virtual server infrastructure. This approach has actually caused some issues as I do not find Ubuntu 
+to be the most stable Linux distro within my esxi host; as I was suffering a lot of freezing. So I have deployed a Red Hat 
+Enterprise machine as the ansible host...makes sense as ansible is now part of Red Hat. I may opt to use other Linux distros 
+as the lab grows, such as Kali, but that is for the future.
  
-For the Cisco routers I am using CSR1000v routers, as these are ideal for deploying in a virtual environment. The only gotcha is the required resource needed for each, but I have 32Gb RAM on my host which is sufficient for the purposes of running my ansible lab.
+For the Cisco routers I am using CSR1000v routers, as these are ideal for deploying in a virtual environment. The only gotcha 
+is the required resource needed for each, but I have 32Gb RAM on my host which is sufficient for the purposes of running my 
+ansible lab.
  
 Virtual Machines 
   ansible host
