@@ -1,6 +1,6 @@
 VMWare Networking
 
-Port GoupVLAN IDvSwitchComment
+Port Goup VLAN IDvSwitchComment
 VM Network0vswitch0
 Management Network	0       vswitch0
 
