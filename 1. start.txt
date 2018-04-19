@@ -19,7 +19,6 @@ helping other like minds embrace automation.
 approached things and the way I have then constructed my playbooks, reflects my own learned understanding. 
 But that does not mean it is the best and most efficient way, it just means it is the way I got it to work. 
 So if there is a different or better way, I genuinly would appreciate feedback.
-S
  
 Which automation solution?
 
