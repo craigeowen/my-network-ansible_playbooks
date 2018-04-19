@@ -1,7 +1,7 @@
 VMWare Networking
 
-Port Goup                           VLAN ID                   vSwitch       Comment
-VM Network                            0                           vswitch0
+Port Goup                           VLAN ID                   vSwitch           Comment
+VM Network                            0                         vswitch0
 Management Network	              0                         vswitch0
 
 vlan10				      10			vlan10		  Site 1
