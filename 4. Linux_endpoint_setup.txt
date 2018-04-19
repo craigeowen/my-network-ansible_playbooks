@@ -1,4 +1,4 @@
-I am writing about network automation. but there is definatley a need
+I am writing about network automation. but there is definitely a need
  to use end hosts. So given that this entire lab is virtualised it is
  easy to spin up end nodes as test targets. 
 
@@ -15,13 +15,13 @@ Ansible admin node
      putty
      TeamViewer
     
-Ubuntu - site nodes
-  standard ubuntu install, plus make sure ssh is set up.
+Ubuntu - site nodes (as I had already deployed these)
+standard ubuntu install, plus make sure ssh is set up.
   
 I made sure to start out with all the linux nodes connected to the
- VM Network port group in order to carry out updates as well as ensuring
- ssh works between the ansible admin node and each of the site nodes. 
- This is really important as ansible will only work over ssh.
+VM Network port group in order to carry out updates as well as ensuring
+ssh works between the ansible admin node and each of the site nodes. 
+This is really important as ansible will only work over ssh.
  
  It is also a really good idea to test ansible against each node, as
  follows:
@@ -31,7 +31,7 @@ I made sure to start out with all the linux nodes connected to the
     <ip address> ansible_user=<username> ansible_password=<password>
     change valuses between <> to your own settings
     
-    172.16.20.2 ansible_user=test2 ansible_password=p4ssw0rd!
+    172.16.20.2 ansible_user=test2 ansible_ssh_pass=p4ssw0rd!
     
     Now ping to ip address to confirm connectivity
     
