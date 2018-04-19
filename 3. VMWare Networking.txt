@@ -1,0 +1,16 @@
+VMWare Networking
+
+Port Goup			    VLAN ID		vSwitch		  Comment
+VM Network			    0			  vswitch0
+Management Network	0			  vswitch0
+
+vlan10				      10			vlan10		  Site 1
+vlan20				      20			vlan20		  Site 2
+vlan30				      30			vlan30		  Site 3
+vlan100				      100			vlan100		  Site 1 WAN uplink
+vlan200				      200			vlan200		  Site 2 WAN uplink
+vlan300				      300			vlan300		  Site 3 WAN uplink
+vlan1002			      1002		vlan1002	  WAN100 <--> WAN200
+vlan1003			      1003		vlan1003	  WAN200 <--> WAN300
+vlan2003			      2003		vlan2003	  WAN200 <--> WAN300
+external			      150			external	  outside interface
