@@ -1,46 +1,22 @@
 Why automation, why now?
 
-Take a look around you, the whole industry is shifting into a more
- agile, automated and orchestrated paradigm.
+-Take a look around you, the whole industry is shifting into a more agile, automated and orchestrated paradigm.
  
-Even Cisco has recognised this and the move in the "Software Defined"
- direction will inevitably lead to the need to automate due to the 
- complexity inherent in todays network deployments
+-Even Cisco has recognised this and the move in the "Software Defined" direction will inevitably lead to the need to automate due to the complexity inherent in todays network deployments
  
 What is the purpose of this article?
 
-First and foremost this is really something I wanted to record so I
- could refer back to it anytime I forgot something or got stuck. So you
- will find it heavily commented so I have good reminders why I did 
- something the way I did.
+- First and foremost this is really something I wanted to record so I could refer back to it anytime I forgot something or got stuck. So you will find it heavily commented so I have good reminders why I did something the way I did.
  
-Secondly there are many great websites and articles that provide a vast
- amount of fantastic details in writing ansible playbooks. But I have
- not found one place that builds up the picture from the ground up. As I
- am a great believer in the KISS (Keep It Simple Stupid) methodology, I
- felt I could contribute a small part in helping other like minds
- embrace automation.
+- Secondly there are many great websites and articles that provide a vast amount of fantastic details in writing ansible playbooks. But I have not found one place that builds up the picture from the ground up. As I am a great believer in the KISS (Keep It Simple Stupid) methodology, I felt I could contribute a small part in helping other like minds embrace automation.
 
-Lastly, I wanted to find a collaborative way to allow me to improve my
- automationsskills. The way I have approached things and the way I have
- then constructed my playbooks, reflects my own learned understanding.
- But that does not mean it is the best and most efficient way, it just
- means it is the way I got it to work. so if there is a different or
- better way, I genuinly would appreciate feedback.
+- Lastly, I wanted to find a collaborative way to allow me to improve my automations skills. The way I have approached things and the way I have then constructed my playbooks, reflects my own learned understanding. But that does not mean it is the best and most efficient way, it just means it is the way I got it to work. so if there is a different or better way, I genuinly would appreciate feedback.
  
 Which automation solution?
-You may have noticed I have already referred to ansible and playbooks
- in the above text, as this is where I am starting as I feel this is
- the best place to start for Cisco Network Automation. 
- However it is my intention to try my hand at others in order to balance
- my understanding and compare different approaches.
+
+- You may have noticed I have already referred to ansible and playbooks in the above text, as this is where I am starting as I feel this is
+ the best place to start for Cisco Network Automation.  However it is my intention to try my hand at others in order to balance my understanding and compare different approaches.
  
 Which Network Vendors?
-I have many years experience with Cisco Systems in Routing, Switching
- and Security. so naturally this will be my starting point. I will start
- off with routers as these will be the easiest run in my virtual
- environment. This I hope will give me a great foundation in automation.
- Once I have the foundaiton with Cisco IoS I would like to try to then
- try automating Cumulusand then compare the difference. This will have
- the added advantage to me of alllowing me to learn Linux networking
- whcih is someting I am really excited about. 
+
+- I have many years experience with Cisco Systems in Routing, Switching and Security. so naturally this will be my starting point. I will start off with Cisco routers as these will be the easiest run in my virtual environment. This I hope will give me a great foundation in automation. Once I have the foundaiton with Cisco IoS I would like to try to then try automating Cumulus and then compare the difference. This will have the added advantage to me of alllowing me to learn Linux networking whcih is someting I am really excited about. 
