@@ -32,5 +32,5 @@ Which Network Vendors?
 - I have many years experience with Cisco Systems in Routing, Switching and Security. so naturally this will be my 
 starting point. I will start off with Cisco routers as these will be the easiest run in my virtual environment. 
 This I hope will give me a great foundation in automation. Once I have the foundation with Cisco IoS I would like 
-to try to then try automating Cumulus and then compare the difference. This will have the added advantage to me of 
-alllowing me to learn Linux networking whcih is someting I am really excited about. 
+to try to have a go at automating Cumulus and then compare the difference. This will have the added advantage to me of 
+alllowing me to learn Linux networking which is someting I am really excited about. 
