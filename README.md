@@ -1,3 +1,3 @@
 # my-network-ansible_playbooks
-Work in progress
-The ansible playbooks I am creating for networking
+
+This is my journey into network automation.
