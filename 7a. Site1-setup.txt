@@ -1,0 +1,43 @@
+1. Lets test what we have so far. Recap the host files includes entries
+for site 1 edge routers ip addresses in vlan10
+csr10 172.16.10.252
+csr11 172.16.10.253
+
+Our ansible hot is 172.16.10.10
+
+So far I can ping and ssh from ansible host to csr10 & 11
+If you cannot then troubleshoot whynot!!!
+
+I have written a simple playbook to test that ansible works for these
+edge routers. This playbook uses no password security and includes all
+variables within the playbook (we will address this in the next topic)
+
+Playbook to run Show Version against Cisco routers
+
+site1_cisco_showVersion.yml
+
+---
+- hosts: er-site1
+  gather_facts: no
+  connection: local
+
+  tasks:
+  - name: show version
+    ios_facts:
+      gather_subset: hardware
+      provider: # the variable needed for login to the router
+        username: cisco
+        password: P4ssw0rd!
+        authorize: true
+        auth_pass: P4ssw0rd!
+
+  - name: print out the IOS version
+    debug:
+      var: ansible_net_version
+
+2.  Now we can use another playbook to add loopbacks 
+playbook - site1_cisco_loopbacks.yml
+3. Amend host files so site 1 ip's are now loopback1
+playbook - site1_cisco_loopbacks.yml
+4. Add static route 0.0.0.0 0.0.0.0 via 10.10.10.254
+playbook - site1_cisco_staticRoute.yml
