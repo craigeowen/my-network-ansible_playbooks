@@ -1,6 +1,7 @@
 # my-network-ansible_playbooks
 
-This is my journey into network automation.
+This is my journey into network automation. Please feel free
+to dive in and enjoy.
 
 Contents
 1. Start
@@ -8,5 +9,5 @@ Contents
 3. VMWare Network
 4. Linux hosts setup
 5. Router setup
-6. Router base config
-7. Ansible Inventory (hosts.yml)
+6. Ansible Inventory (hosts.yml)
+7. Lets write some playbooks
