@@ -11,5 +11,5 @@ Contents
 5. Router setup
 6. Ansible Inventory (hosts.yml)
 7. Lets write some playbooks
-  7a. Site1 setup
-  7b. Secure the passwords!!!
+7a. Site1 setup
+7b. Secure the passwords!!!
