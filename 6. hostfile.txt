@@ -1,0 +1,68 @@
+The hosts file
+
+This is the inventory for all your ansible accessible devices.
+
+So we have already seen this in action for the linux hosts. So lets take
+ a closer look and make some slight changes alonfg the way.
+ 
+But please note, I will introduce the changes in slow time as we develop
+the lab, so this will iterate a number of times.
+ 
+The basic format is to include the host IP address or name (if in DNS)
+But pretty quickly this can become difficult to deal with, 
+so like most things we can group hosts into one or more groups
+...and indeed group groups!
+ 
+Also we can include variables in the hosts files..lets have an example 
+(Note at this stage I am using plain text pwd...this will change in 
+later labs...so stick with it for now)
+(But we will not inlcude variable for the routers - these will be 
+included in the playbook...and eventually migrated to a seperate 
+variables files.)
+
+ Groups:
+ 
+ [linux]
+ 172.16.10.4 ansible_user=test1 ansible_ssh_pass=P4ssw0rd!
+ 172.16.10.5 ansible_user=test10 ansible_ssh_pass=P4ssw0rd!
+ 172.16.20.2 ansible_user=test2 ansible_ssh_pass=P4ssw0rd!
+ 172.16.30.3 ansible_user=test3 ansible_ssh_pass=P4ssw0rd!
+ 
+ So we have the following
+ - [linux] #this is the group name
+ - one line per host, with a variable for login mane and a variable for 
+  the ssh password.
+
+We can make an improvement for this as I am using the same password 
+for each host...I can create a sperate variable as follows and add 
+some checky comments (#)
+
+So now follows the hostfile - 
+
+[linux]
+ #site1
+ 172.16.10.4 ansible_user=test1
+ 172.16.10.5 ansible_user=test10
+ #site2
+ 172.16.20.2 ansible_user=test2 
+ #site3
+ 172.16.30.3 ansible_user=test3 
+ 
+[linux:vars]
+ansible_ssh_pass=P4ssw0rd!
+
+###Now add routers
+
+#Edge Routers
+[edgerouter:children] #remember we can group groups
+
+er-site1 # include the group of site 1 edge routers
+
+#site 2 and 3 will be added when we grow the lab
+#er-site2 
+#er-site3
+
+[er-site1] # a group for edge routers, which is then included above
+172.16.10.252 #csr10 
+172.16.10.253 #csr11
+
