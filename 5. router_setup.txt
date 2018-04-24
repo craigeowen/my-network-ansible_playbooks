@@ -1,18 +1,19 @@
 Instead of using an emulated environment such as GNS3 or VIRL, my aim
  is to build my entire lab in a virtualised environment. I started out
  using VirtualBox, but my laptop does not have enough resources to run
- all my VM's. I got 3 CSR routers and 2 linux hosts running, but I 
- wanted to run more. Luckily I have a VMWare ESXi host with 8 virtual
+ all my VM's. I got 3 CSR routers and 2 linux hosts running before I 
+ maxed out my machine, but I wanted to run more. 
+ Luckily I have a VMWare ESXi host with 8 virtual
  core and 32Gb RAM, so I have dedicated it to this lab.
 
-I also have access to the CSR1000v image as a Cisco partner. 
+I also have access to the CSR1000v image as I work for a Cisco partner. 
 The CSR1000v is really easy to spin up in VMWare, the only real issue is
- that it requires 4Gb RAM.
+ that it requires 4Gb RAM per router.
  
-Nativley ansible connects to a host on ssh and then utilises the python
+Natively ansible connects to a host on ssh and then utilises the python
 interpreter to compile and run the plays. However this is not possible
-on a Cisco router so on the one hand it has a mre limited set of modules
-, on the other I think it makes for more streamlined and easier 
+on a Cisco router so on the one hand it has a more limited set of modules, 
+on the other I think it makes for more streamlined and easier 
 playbooks.
 
 But given these limitations it also requires a more hands on approach
@@ -48,6 +49,8 @@ But given these limitations it also requires a more hands on approach
 [red1@localhost ansible]$ ssh cisco@<ip address>
  Once ssh access works, then the router is ready.
 
-We will start with a sigle router and build out, using ansible as much
- as possible as we go.
+We will start with a single router and build out, using ansible as much 
+as possible as we go. Sometimes there will be a need to log into the 
+router instance via VMWare console, but I will minimise this as much 
+as possible.
    
