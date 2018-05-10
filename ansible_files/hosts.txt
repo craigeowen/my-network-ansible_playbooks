@@ -1,3 +1,11 @@
 [linux]
 #Site1
-172.16.10.4 
+172.16.10.4 ansible_user=test1
+172.16.10.5 ansible_user=test10 
+
+[linux:vars]
+ansible_password=S13nn423!!
+
+[er-site1]
+172.16.10.252 # CSR10 e1 ip address
+172.16.10.253 # CSR11 e1 ip address
